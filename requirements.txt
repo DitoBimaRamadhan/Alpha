@@ -1,0 +1,9 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.3
+sqlalchemy>=2.0
+python-dotenv>=1.0
+groq>=0.11
+# Opsional, hanya jika memakai PostgreSQL:
+psycopg2-binary>=2.9

@@ -1,0 +1,1 @@
+"""Server ALPHA AI (FastAPI)."""
