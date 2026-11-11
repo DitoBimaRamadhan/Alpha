@@ -1,1 +1,0 @@
-# Make endpoints a package

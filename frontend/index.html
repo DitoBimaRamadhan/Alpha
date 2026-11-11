@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALPHA AI — Generator Teks</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="/" class="brand">ALPHA <span>AI</span></a>
+    <nav>
+      <a href="/" class="active">Generator</a>
+      <a href="/pricing.html">Harga</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Buat konten berkualitas dalam hitungan detik</h1>
+      <p>Tulis ide atau instruksi, lalu biarkan ALPHA AI menyusun teksnya untukmu.</p>
+    </section>
+
+    <section class="card">
+      <form id="generate-form">
+        <label for="prompt">Prompt</label>
+        <textarea id="prompt" name="prompt" rows="5" maxlength="4000"
+          placeholder="Contoh: Buatkan caption Instagram untuk peluncuran produk kopi baru..." required></textarea>
+        <div class="form-footer">
+          <span id="char-count" class="muted">0 / 4000</span>
+          <button type="submit" id="generate-btn" class="btn btn-primary">Generate</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="result-card" class="card result hidden" aria-live="polite">
+      <div class="result-header">
+        <h2>Hasil</h2>
+        <button type="button" id="copy-btn" class="btn btn-ghost">Salin</button>
+      </div>
+      <div id="result" class="result-body"></div>
+    </section>
+  </main>
+
+  <footer class="footer">© ALPHA AI</footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
